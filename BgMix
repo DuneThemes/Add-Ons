@@ -1,0 +1,223 @@
+DO NOT JUST COPY AND PASTE THE WHOLE CHUNK OF CODE. IT WILL NOT WORK.
+
+Below are the steps for importing and installing the code onto your blog.
+
+1. Copy and paste the meta code below into your theme. It needs to be placed inbetween the <head> and </head> tags.
+
+    <meta name="if:BgMix Rounded Icons" content="1" />
+    
+    <meta name="image:BgMix Background One" content="" />
+    <meta name="image:BgMix Background Two" content="" />
+    <meta name="image:BgMix Background Three" content="" />
+    <meta name="image:BgMix Background Four" content="" />
+    <meta name="image:BgMix Background Five" content="" />
+    <meta name="image:BgMix Background Six" content="" />
+    <meta name="image:BgMix Background Seven" content="" />
+    <meta name="image:BgMix Background Eight" content="" />
+    
+    <meta name="text:BgMix Background One Name" content="" />
+    <meta name="text:BgMix Background Two Name" content="" />
+    <meta name="text:BgMix Background Three Name" content="" />
+    <meta name="text:BgMix Background Four Name" content="" />
+    <meta name="text:BgMix Background Five Name" content="" />
+    <meta name="text:BgMix Background Six Name" content="" />
+    <meta name="text:BgMix Background Seven Name" content="" />
+    <meta name="text:BgMix Background Eight Name" content="" />
+    
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="http://static.tumblr.com/uv8mqxy/0Jjnmt0vo/bgmix.js"></script>
+    <style>
+		#changableBackgroundController{
+		  top: 20px;
+		  left: 20px;
+		  position: fixed;	
+		  z-index: 99;
+		  font-family: Tahoma, Geneva, sans-serif;
+		  width: 250px;
+		}
+		#changableBackgroundController #button{
+		  margin-right: 5px;
+		  cursor: pointer;
+		  position: relative;
+		}
+		#changableBackgroundController #button img{
+		  width: 50px;
+		  height: 50px;	
+		  border: solid 2px #fff;
+		  margin-bottom: 5px;
+		}
+		{block:IfBgMixRoundedIcons}
+			#changableBackgroundController #button img{
+			  border-radius: 200px;	
+			}
+		{/block:IfBgMixRoundedIcons}
+		#changableBackgroundController #name{
+		  top: 0px;
+		  position: relative;
+		  padding: 10px;
+		  color: #FFF;
+		  background: #333;
+		}
+		#changableBackground{
+		  top: 0px;
+		  left: 0px;
+		  right: 0px;
+		  bottom: 0px;
+		  position: fixed;
+		}
+		#changableBackground #back{
+		  top: 0px;
+		  left: 0px;
+		  right: 0px;
+		  bottom: 0px;
+		  position: fixed;
+		  background-size: cover;
+		  background-position: center;
+		}
+		#back.one{
+		  background: url({image:BgMix Background One});	
+		}
+		#back.two{
+		  background: url({image:BgMix Background Two});
+		}
+		#back.three{
+		  background: url({image:BgMix Background Three});	
+		}
+		#back.four{
+		  background: url({image:BgMix Background Four});	
+		}
+		#back.five{
+		  background: url({image:BgMix Background Five});	
+		}
+		#back.six{
+		  background: url({image:BgMix Background Six});	
+		}
+		#back.seven{
+		  background: url({image:BgMix Background Seven});	
+		}
+		#back.eight{
+		  background: url({image:BgMix Background Eight});	
+		}
+	</style>
+	
+	
+    
+2. Next, copy and paste the below code onto your blog. It should appear just after the <body> tag.
+
+  <div id="changableBackgroundController">
+    	{block:IfBgMixBackgroundOneName}
+            <span id="button" class="one">
+                <img src="{image:BgMix Background One}" />
+            </span>
+        {/block:IfBgMixBackgroundOneName}
+        {block:IfBgMixBackgroundTwoName}
+            <span id="button" class="two">
+                <img src="{image:BgMix Background Two}" />
+            </span>
+        {/block:IfBgMixBackgroundTwoName}
+        {block:IfBgMixBackgroundThreeName}
+            <span id="button" class="three">
+                <img src="{image:BgMix Background Three}" />
+            </span>
+        {/block:IfBgMixBackgroundThreeName}
+        {block:IfBgMixBackgroundFourName}
+            <span id="button" class="four">
+                <img src="{image:BgMix Background Four}" />
+            </span>
+        {/block:IfBgMixBackgroundFourName}
+        {block:IfBgMixBackgroundFiveName}
+            <span id="button" class="five">
+                <img src="{image:BgMix Background Five}" />
+            </span>
+        {/block:IfBgMixBackgroundFiveName}
+        {block:IfBgMixBackgroundSixName}
+            <span id="button" class="six">
+                <img src="{image:BgMix Background Six}" />
+            </span>
+        {/block:IfBgMixBackgroundSixName}
+        {block:IfBgMixBackgroundSevenName}
+            <span id="button" class="seven">
+                <img src="{image:BgMix Background Seven}" />
+            </span>
+        {/block:IfBgMixBackgroundSevenName}
+        {block:IfBgMixBackgroundEightName}
+            <span id="button" class="eight">
+                <img src="{image:BgMix Background Eight}" />
+            </span>
+        {/block:IfBgMixBackgroundEightName}
+        <div id="name">
+        	{block:IfBgMixBackgroundOneName}
+                <div class="one">
+                    {text:BgMix Background One Name}
+                </div>
+            {/block:IfBgMixBackgroundOneName}
+            {block:IfBgMixBackgroundTwoName}
+                <div class="two">
+                    {text:BgMix Background Two Name}
+                </div>
+            {/block:IfBgMixBackgroundTwoName}
+            {block:IfBgMixBackgroundThreeName}
+                <div class="three">
+                    {text:BgMix Background Three Name}
+                </div>
+            {/block:IfBgMixBackgroundThreeName}
+            {block:IfBgMixBackgroundFourName}
+                <div class="four">
+                    {text:BgMix Background Four Name}
+                </div>
+            {/block:IfBgMixBackgroundFourName}
+            {block:IfBgMixBackgroundFiveName}
+                <div class="five">
+                    {text:BgMix Background Five Name}
+                </div>
+            {/block:IfBgMixBackgroundFiveName}
+            {block:IfBgMixBackgroundSixName}
+                <div class="six">
+                    {text:BgMix Background Six Name}
+                </div>
+            {/block:IfBgMixBackgroundSixName}
+            {block:IfBgMixBackgroundSevenName}
+                <div class="seven">
+                    {text:BgMix Background Seven Name}
+                </div>
+            {/block:IfBgMixBackgroundSevenName}
+            {block:IfBgMixBackgroundEightName}
+                <div class="eight">
+                    {text:BgMix Background Eight Name}
+                </div>
+            {/block:IfBgMixBackgroundEightName}
+        </div>
+    </div>
+    <div id="changableBackground">
+    	<div id="back" class="one">
+        	
+        </div>
+        <div id="back" class="two">
+        	
+        </div>
+        <div id="back" class="three">
+        	
+        </div>
+        <div id="back" class="four">
+        	
+        </div>
+        <div id="back" class="five">
+        	
+        </div>
+        <div id="back" class="six">
+        	
+        </div>
+        <div id="back" class="seven">
+        	
+        </div>
+        <div id="back" class="eight">
+        	
+        </div>
+    </div>
+    
+    And that's it! I've you've done these two things correctly, all that should be left to do it upload and name
+    your backgrounds! 
+    
+    If you have any problems, please contact us.
+    
+    Thanks for using Dune Themes! 
