@@ -2,7 +2,7 @@ DO NOT JUST COPY AND PASTE THE WHOLE CHUNK OF CODE. IT WILL NOT WORK.
 
 Below are the steps for importing and installing the code onto your blog.
 
-1. Copy and paste the meta code below into your theme. It needs to be placed inbetween the <head> and </head> tags.
+1. Copy and paste the meta code below into your theme. It needs to be placed in between the <head> and </head> tags.
 
     <meta name="if:BgMix Rounded Icons" content="1" />
     
@@ -215,9 +215,10 @@ Below are the steps for importing and installing the code onto your blog.
         </div>
     </div>
     
-    And that's it! I've you've done these two things correctly, all that should be left to do it upload and name
+    And that's it! I've you've done these two things correctly, all that should be left to do is upload and name
     your backgrounds! 
     
     If you have any problems, please contact us.
     
     Thanks for using Dune Themes! 
+
