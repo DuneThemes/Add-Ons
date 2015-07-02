@@ -1,0 +1,19 @@
+<script>
+	//
+	// DescriptionSquared was developed by Dune Themes
+	// Not to be republished
+	//
+	// Change "descriptionHolder" to the ID of div in which your description is shown.
+	//
+	var description = [
+	 "Description One",
+	 "Description Two",
+	 "Description Three",
+	 "Description Four"    // Feel free to add as many variations as you like. Ensure to not include comma on last line.
+	];
+	function RndText() {
+	  var rannum= Math.floor(Math.random()*description.length);
+	  document.getElementById('descriptionHolder').innerHTML=description[rannum];
+	}
+	onload = function() { RndText(); }
+</script>
