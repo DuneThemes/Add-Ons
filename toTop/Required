@@ -1,0 +1,26 @@
+<!-- Copy below code before the </head> tag -->
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+<script src="https://raw.githubusercontent.com/DuneThemes/Add-Ons/master/toTop/toTop.js"></script>
+<style>
+	/* toTop Styles */
+		#toTop{
+		  padding: 20px;
+		  background: #333;
+		  color: #fff;
+		  cursor: pointer;
+		  border-radius: 3px;
+		  z-index: 99;
+		  right: 50px;
+		  bottom: 30px;	
+		  position: fixed;
+  	}
+</style>
+
+<!-- Copy the below code after the <body> tag -->
+
+<div id="toTop">
+  Top
+</div>
+
+<!-- That's all. Hit save and enjoy! -->
