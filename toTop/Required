@@ -1,7 +1,7 @@
 <!-- Copy below code before the </head> tag -->
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
-<script src="https://raw.githubusercontent.com/DuneThemes/Add-Ons/master/toTop/toTop.js"></script>
+<script src="http://static.tumblr.com/uv8mqxy/wBHo5b8su/totop.js"></script>
 <style>
 	/* toTop Styles */
 		#toTop{
