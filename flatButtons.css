@@ -1,0 +1,148 @@
+/*
+	flatButtons by Dune Themes
+	
+	Need help?
+	dunethemes.tumblr.com/support
+	dunethemes@gmail.com
+	@DuneThemes
+	
+	Do not redistribute or claim as your own.
+	© Dune Themes
+*/
+
+/* Supports <button>, <div> and <a> */
+	
+	/* Reset */	
+		button.flatButton{
+		  border: none;
+		  background: none;
+		  padding: 0;
+		  outline: none;
+		}
+	
+	@import url(https://fonts.googleapis.com/css?family=Lato:700);
+		
+	button.flatButton,
+	div.flatButton,
+	a.flatButton,
+	.flatButton{
+	  padding: 1.3em;
+	  margin: 5px;	
+	  text-decoration: none;
+	  cursor: pointer;
+	  border-radius: 5px;
+	  text-align: center;
+	  font-family: 'Lato', sans-serif;
+	  -webkit-user-select: none;
+	  -moz-user-select: none;
+	  -o-user-select: none;
+	  user-select: none;
+	  display: inline-block;
+	}
+	.flatButton.uppercase{
+	  text-transform: uppercase;	
+	}
+	
+	/* Colours */
+		.flatButton.turquiose{
+		  background: #1abc9c;
+		  box-shadow: 0px 3px 0px #16a085;	
+		  color: #fff;
+		}
+		.flatButton.green{
+		  background: #2ecc71;
+		  box-shadow: 0px 3px 0px #27ae60;	
+		  color: #fff;
+		}
+		.flatButton.blue{
+		  background: #3498db;
+		  box-shadow: 0px 3px 0px #2980b9;	
+		  color: #fff;
+		}
+		.flatButton.purple{
+		  background: #9b59b6;
+		  box-shadow: 0px 3px 0px #8e44ad;	
+		  color: #fff;
+		}
+		.flatButton.darkBlue{
+		  background: #34495e;
+		  box-shadow: 0px 3px 0px #2c3e50;	
+		  color: #fff;
+		}
+		.flatButton.yellow{
+		  background: #f1c40f;
+		  box-shadow: 0px 3px 0px #f39c12;	
+		  color: #fff;
+		}
+		.flatButton.orange{
+		  background: #e67e22;
+		  box-shadow: 0px 3px 0px #d35400;	
+		  color: #fff;
+		}
+		.flatButton.red{
+		  background: #e74c3c;
+		  box-shadow: 0px 3px 0px #c0392b;	
+		  color: #fff;
+		}
+		.flatButton.white{
+		  background: #ecf0f1;
+		  box-shadow: 0px 3px 0px #bdc3c7;	
+		  color: #34495e;
+		}
+		.flatButton.grey{
+		  background: #95a5a6;
+		  box-shadow: 0px 3px 0px #7f8c8d;	
+		  color: #fff;
+		}
+	
+	
+	/* Interactions */
+		.flatButton.turquiose.interact:active{
+		  background: #16a085;
+		  box-shadow: 0px 3px 0px #1abc9c;	
+		  color: #fff;
+		}
+		.flatButton.green.interact:active{
+		  background: #27ae60;
+		  box-shadow: 0px 3px 0px #2ecc71;	
+		  color: #fff;
+		}
+		.flatButton.blue.interact:active{
+		  background: #2980b9;
+		  box-shadow: 0px 3px 0px #3498db;	
+		  color: #fff;
+		}
+		.flatButton.purple.interact:active{
+		  background: #8e44ad;
+		  box-shadow: 0px 3px 0px #9b59b6;	
+		  color: #fff;
+		}
+		.flatButton.darkBlue.interact:active{
+		  background: #2c3e50;
+		  box-shadow: 0px 3px 0px #34495e;	
+		  color: #fff;
+		}
+		.flatButton.yellow.interact:active{
+		  background: #f39c12;
+		  box-shadow: 0px 3px 0px #f1c40f;	
+		  color: #fff;
+		}
+		.flatButton.orange.interact:active{
+		  background: #d35400;
+		  box-shadow: 0px 3px 0px #e67e22;	
+		  color: #fff;
+		}
+		.flatButton.red.interact:active{
+		  background: #c0392b;
+	  	  box-shadow: 0px 3px 0px #e74c3c;	
+		}
+		.flatButton.white.interact:active{
+		  background: #bdc3c7;
+		  box-shadow: 0px 3px 0px #ecf0f1;	
+		  color: #34495e;
+		}
+		.flatButton.grey.interact:active{
+		  background: #7f8c8d;
+		  box-shadow: 0px 3px 0px #95a5a6;	
+		  color: #fff;
+		}
