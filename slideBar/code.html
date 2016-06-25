@@ -1,0 +1,308 @@
+<link rel="stylesheet" href="http://static.tumblr.com/uv8mqxy/WORo9c79k/slidebar.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" />
+    <!--
+        slideBar by Dune Themes
+        
+        Need help?
+        dunethemes.tumblr.com/support
+        dunethemes@gmail.com
+        @DuneThemes
+        
+        Do not redistribute or claim as your own.
+        © Dune Themes
+    -->
+    {block:Hidden}
+        <meta name="if:sB Show Social" content="0">
+        <meta name="image:sB HD Portrait" content="">     
+        <meta name="text:sB Twitter URL" content="" />
+        <meta name="text:sB Facebook URL" content="" />
+        <meta name="text:sB Instagram URL" content="" />
+        <meta name="text:sB YouTube URL" content="" />
+        <meta name="text:sB WordPress URL" content="" />
+        <meta name="text:sB SoundCloud URL" content="" />
+        <meta name="text:sB Stack Overflow URL" content="" />
+        <meta name="text:sB Google Plus URL" content="" />
+        <meta name="text:sB Twitch URL" content="" />
+        <meta name="text:sB Behance URL" content="" />
+        <meta name="text:sB Reddit URL" content="" />
+        <meta name="text:sB Vine URL" content="" />
+        <meta name="text:sB Spotify URL" content="" />
+        <meta name="text:sB Delicious URL" content="" />
+        <meta name="text:sB DeviantArt URL" content="" />
+        <meta name="text:sB Skype URL" content="" />
+        <meta name="text:sB LinkedIn URL" content="" />
+        <meta name="text:sB Pinterest URL" content="" />
+        <meta name="text:sB Dribbble URL" content="" />
+        <meta name="text:sB Vimeo URL" content="" />
+        <meta name="text:sB Flickr URL" content="" />
+        <meta name="text:sB Github URL" content="" />
+        <meta name="text:sB Foursquare URL" content="" />
+        <meta name="text:sB Stack Exchange URL" content="" />   
+        <meta name="if:sB Bold Title" content="1">
+        <meta name="if:sB Uppercase Title" content="1">
+        <meta name="if:sB Spaced Title" content="1">
+        <meta name="color:sB Background" content="#191919">
+        <meta name="color:sB Text" content="#ffffff">
+        <meta name="color:sB Title" content="#ffffff">
+        <meta name="color:sB Social Link" content="#ffffff">
+        <meta name="color:sB Social Link Text" content="#191919">
+        <meta name="color:sB Social Link Hover" content="#C5C5C5">
+        <meta name="color:sB Button Background" content="#191919">
+        <meta name="color:sB Button Text" content="#ffffff">
+   	{/block:Hidden}
+    <style>
+		.dtadd-slideBar{
+			background: {color:sB Background};
+			color: {color:sB Text};	
+		}
+		.dtadd-slideBar .blog-link{
+			{block:IfsBBoldTitle}font-weight: bold;{/block:IfsBBoldTitle}
+			color: {color:sB Title};
+			{block:IfsBUppercaseTitle}text-transform: uppercase;{/block:IfsBUppercaseTitle}
+			{block:IfsBSpacedTitle}letter-spacing: 2px;{/block:IfsBSpacedTitle}
+		}
+		.dtadd-slideBar a .fa-circle{
+			color: {color:sB Social Link};	
+		}
+		.dtadd-slideBar a .fa-stack-1x{
+			color: {color:sB Social Link Text};	
+		}
+		/* Animate Social Links */
+			.dtadd-slideBar a:hover .fa-circle{
+				color: {color:sB Social Link Hover};	
+			}
+		.dtadd-slideBar  .side-activate,
+		.dtadd-slideBar  .side-close{
+			background: {color:sB Button Background};
+			color: {color:sB Button Text};	
+		}
+	</style>
+    <div class="dtadd-slideBar">
+    	<div class="side-activate">
+            <i class="fa fa-bars"></i>
+        </div>
+        <div class="side-close">
+            <i class="fa fa-close"></i>
+        </div>
+        {block:ShowAvatar}
+            {block:IfNotsBHDPortraitImage}
+            	<a href="{BlogURL}">
+                	<img src="{PortraitURL-128}" class="portrait">
+                </a>
+            {/block:IfNotsBHDPortraitImage}
+            {block:IfsBHDPortraitImage}
+            	<img src="{image:sB HD Portrait}" class="portrait full">
+            {/block:IfsBHDPortraitImage}
+        {/block:ShowAvatar}
+        {block:ShowTitle}
+            <a href="{BlogURL}" class="blog-link">
+                <h1>{Title}</h1>
+            </a>
+        {/block:ShowTitle}
+        {block:ShowDescription}
+            <div class="description">
+                {Description}
+            </div>
+        {/block:ShowDescription}
+        {block:IfsBShowSocial}
+            <div class="social">
+                {block:IfsBTwitterURL}            
+                    <a href="{text:sB Twitter URL}">
+                        <span class="fa-stack fa-lg">
+                            <i class="fa fa-circle fa-stack-2x"></i>
+                            <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+                        </span>
+                    </a>
+                {/block:IfsBTwitterURL}
+                {block:IfsBFacebookURL}    
+                    <a href="{text:sB Facebook URL}">
+                        <span class="fa-stack fa-lg">
+                            <i class="fa fa-circle fa-stack-2x"></i>
+                            <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
+                        </span>
+                    </a>
+                {/block:IfsBFacebookURL}
+                {block:IfsBInstagramURL}    
+                    <a href="{text:sB Instagram URL}">
+                        <span class="fa-stack fa-lg">
+                            <i class="fa fa-circle fa-stack-2x"></i>
+                            <i class="fa fa-instagram fa-stack-1x fa-inverse"></i>
+                        </span>
+                    </a>
+                {/block:IfsBInstagramURL}
+                {block:IfsBYouTubeURL}    
+                    <a href="{text:sB YouTube URL}">
+                        <span class="fa-stack fa-lg">
+                          <i class="fa fa-circle fa-stack-2x"></i>
+                          <i class="fa fa-youtube fa-stack-1x fa-inverse"></i>
+                        </span>
+                    </a>
+                {/block:IfsBYouTubeURL}                
+                {block:IfsBWordPressURL}    
+                    <a href="{text:sB WordPress URL}">
+                        <span class="fa-stack fa-lg">
+                          <i class="fa fa-circle fa-stack-2x"></i>
+                          <i class="fa fa-wordpress fa-stack-1x fa-inverse"></i>
+                        </span>
+                    </a>
+                {/block:IfsBWordPressURL}
+                {block:IfsBSoundCloudURL}    
+                    <a href="{text:sB SoundCloud URL}">
+                        <span class="fa-stack fa-lg">
+                          <i class="fa fa-circle fa-stack-2x"></i>
+                          <i class="fa fa-soundcloud fa-stack-1x fa-inverse"></i>
+                        </span>
+                    </a>    
+                {/block:IfsBSoundCloudURL}
+                {block:IfsBStackOverflowURL}    
+                    <a href="{text:sB Stack Overflow URL}">
+                        <span class="fa-stack fa-lg">
+                          <i class="fa fa-circle fa-stack-2x"></i>
+                          <i class="fa fa-stack-overflow fa-stack-1x fa-inverse"></i>
+                        </span>
+                    </a>    
+                {/block:IfsBStackOverflowURL}
+                {block:IfsBGooglePlusURL}    
+                    <a href="{text:sB Google Plus URL}">
+                        <span class="fa-stack fa-lg">
+                          <i class="fa fa-circle fa-stack-2x"></i>
+                          <i class="fa fa-google-plus fa-stack-1x fa-inverse"></i>
+                        </span>
+                    </a>
+                {/block:IfsBGooglePlusURL}
+                {block:IfsBTwitchURL}    
+                    <a href="{text:sB Twitch URL}">
+                        <span class="fa-stack fa-lg">
+                          <i class="fa fa-circle fa-stack-2x"></i>
+                          <i class="fa fa-twitch fa-stack-1x fa-inverse"></i>
+                        </span>
+                    </a>    
+                {/block:IfsBTwitchURL}
+                {block:IfsBBehanceURL}    
+                    <a href="{text:sB Behance URL}">
+                        <span class="fa-stack fa-lg">
+                          <i class="fa fa-circle fa-stack-2x"></i>
+                          <i class="fa fa-behance fa-stack-1x fa-inverse"></i>
+                        </span>
+                    </a>
+                {/block:IfsBBehanceURL}
+                {block:IfsBRedditURL}    
+                    <a href="{text:sB Reddit URL}">
+                        <span class="fa-stack fa-lg">
+                          <i class="fa fa-circle fa-stack-2x"></i>
+                          <i class="fa fa-reddit fa-stack-1x fa-inverse"></i>
+                        </span>
+                    </a>
+                {/block:IfsBRedditURL}
+                {block:IfsBVineURL}    
+                    <a href="{text:sB Vine URL}">
+                        <span class="fa-stack fa-lg">
+                          <i class="fa fa-circle fa-stack-2x"></i>
+                          <i class="fa fa-vine fa-stack-1x fa-inverse"></i>
+                        </span>
+                    </a>
+                {/block:IfsBVineURL}
+                {block:IfsBSpotifyURL}    
+                    <a href="{text:sB Spotify URL}">
+                        <span class="fa-stack fa-lg">
+                          <i class="fa fa-circle fa-stack-2x"></i>
+                          <i class="fa fa-spotify fa-stack-1x fa-inverse"></i>
+                        </span>
+                    </a>
+                {/block:IfsBSpotifyURL}
+                {block:IfsBDeliciousURL}    
+                    <a href="{text:sB Delicious URL}">
+                        <span class="fa-stack fa-lg">
+                          <i class="fa fa-circle fa-stack-2x"></i>
+                          <i class="fa fa-delicious fa-stack-1x fa-inverse"></i>
+                        </span>
+                    </a>    
+                {/block:IfsBDeliciousURL}
+                {block:IfsBDeviantArtURL}    
+                    <a href="{text:sB DeviantArt URL}">
+                        <span class="fa-stack fa-lg">
+                          <i class="fa fa-circle fa-stack-2x"></i>
+                          <i class="fa fa-deviantart fa-stack-1x fa-inverse"></i>
+                        </span>
+                    </a>    
+                {/block:IfsBDeviantArtURL}
+                {block:IfsBSkypeURL}    
+                    <a href="{text:sB Skype URL}">
+                        <span class="fa-stack fa-lg">
+                          <i class="fa fa-circle fa-stack-2x"></i>
+                          <i class="fa fa-skype fa-stack-1x fa-inverse"></i>
+                        </span>
+                    </a>    
+                {/block:IfsBSkypeURL}
+                {block:IfsBLinkedInURL}    
+                    <a href="{text:sB LinkedIn URL}">
+                        <span class="fa-stack fa-lg">
+                          <i class="fa fa-circle fa-stack-2x"></i>
+                          <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
+                        </span>
+                    </a>    
+                {/block:IfsBLinkedInURL}
+                {block:IfsBPinterestURL}    
+                    <a href="{text:sB Pinterest URL}">
+                        <span class="fa-stack fa-lg">
+                          <i class="fa fa-circle fa-stack-2x"></i>
+                          <i class="fa fa-pinterest fa-stack-1x fa-inverse"></i>
+                        </span>
+                    </a>    
+                {/block:IfsBPinterestURL}
+                {block:IfsBDribbbleURL}    
+                    <a href="{text:sB Dribbble URL}">
+                        <span class="fa-stack fa-lg">
+                          <i class="fa fa-circle fa-stack-2x"></i>
+                          <i class="fa fa-dribbble fa-stack-1x fa-inverse"></i>
+                        </span>
+                    </a>    
+                {/block:IfsBDribbbleURL}
+                {block:IfsBVimeoURL}    
+                    <a href="{text:sB Vimeo URL}">
+                        <span class="fa-stack fa-lg">
+                          <i class="fa fa-circle fa-stack-2x"></i>
+                          <i class="fa fa-vimeo-square fa-stack-1x fa-inverse"></i>
+                        </span>
+                    </a>    
+                {/block:IfsBVimeoURL}
+                {block:IfsBFlickrURL}    
+                    <a href="{text:sB Flickr URL}">
+                        <span class="fa-stack fa-lg">
+                          <i class="fa fa-circle fa-stack-2x"></i>
+                          <i class="fa fa-flickr fa-stack-1x fa-inverse"></i>
+                        </span>
+                    </a>    
+                {/block:IfsBFlickrURL}
+                {block:IfsBGithubURL}    
+                    <a href="{text:sB Github URL}">
+                        <span class="fa-stack fa-lg">
+                          <i class="fa fa-circle fa-stack-2x"></i>
+                          <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                        </span>
+                    </a>    
+                {/block:IfsBGithubURL}
+                {block:IfsBFoursquareURL}    
+                    <a href="{text:sB Foursquare URL}">
+                        <span class="fa-stack fa-lg">
+                          <i class="fa fa-circle fa-stack-2x"></i>
+                          <i class="fa fa-foursquare fa-stack-1x fa-inverse"></i>
+                        </span>
+                    </a>    
+                {/block:IfsBFoursquareURL}
+                {block:IfsBStackExchangeURL}    
+                    <a href="{text:sB Stack Exchange URL}">
+                        <span class="fa-stack fa-lg">
+                          <i class="fa fa-circle fa-stack-2x"></i>
+                          <i class="fa fa-stack-exchange fa-stack-1x fa-inverse"></i>
+                        </span>
+                    </a>
+                {/block:IfsBStackExchangeURL}          
+            </div>
+        {/block:IfsBShowSocial}
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script src="http://static.tumblr.com/uv8mqxy/UsDo9c79n/slidebar.js"></script>
+    <link rel="stylesheet" href="http://static.tumblr.com/uv8mqxy/pyFo9c7dh/perfect-scrollbar.min.css" />
+	<script src="http://static.tumblr.com/uv8mqxy/f2So9c7cp/perfect-scrollbar.jquery.min.js"></script>
+    <script>$('.dtadd-slideBar').perfectScrollbar();</script>
