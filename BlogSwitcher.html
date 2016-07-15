@@ -1,0 +1,61 @@
+<link rel="stylesheet" href="http://static.tumblr.com/uv8mqxy/pRXoacknf/blogswitcher.css">
+<!--
+    Blog Switcher by Dune Themes
+    
+    Need help?
+    dunethemes.tumblr.com/support
+    dunethemes@gmail.com
+    @DuneThemes
+    
+    Do not redistribute or claim as your own.
+    © Dune Themes
+-->
+{block:Hidden}
+	<meta name="text:Blog One Text" content="">
+    <meta name="text:Blog One Link" content="">
+    <meta name="text:Blog Two Text" content="">
+    <meta name="text:Blog Two Link" content="">
+    <meta name="text:Blog Three Text" content="">
+    <meta name="text:Blog Three Link" content="">
+    <meta name="text:Blog Four Text" content="">
+    <meta name="text:Blog Four Link" content="">
+    <meta name="text:Blog Five Text" content="">
+    <meta name="text:Blog Five Link" content="">
+    <meta name="text:Blog Six Text" content="">
+    <meta name="text:Blog Six Link" content="">
+    <meta name="color:Blog Switcher" content="#1D1D1D">
+    <meta name="color:Blog List" content="#ffffff">
+    <meta name="color:Blog Link Hover" content="#E63535">
+{/block:Hidden}
+<style>
+	/* --- Colours --- */
+		.dtadd-blog-switcher-wrap{
+			background: {color:Blog Switcher};
+			color: {color:Blog List};	
+		}
+		.dtadd-blog-switcher a{
+			color: {color:Blog Switcher};
+			text-decoration: none;	
+		}
+		.dtadd-dropdown-content{
+			background: {color:Blog List};	
+		}
+		.dtadd-blog-switcher a:hover{
+			color: {color:Blog Link Hover};	
+		}		
+</style>
+{block:IfBlogOneText}
+    <div class="dtadd-blog-switcher-wrap">
+        <div class="dtadd-blog-switcher">
+            <span class="dtadd-change-text">Change Blog</span>
+            <div class="dtadd-dropdown-content">
+                <li><a href="{text:Blog One Link}">{text:Blog One Text}</a></li>
+                {block:IfBlogTwoText}<li><a href="{text:Blog Two Link}">{text:Blog Two Text}</a></li>{/block:IfBlogTwoText}
+                {block:IfBlogThreeText}<li><a href="{text:Blog Three Link}">{text:Blog Three Text}</a></li>{/block:IfBlogThreeText}
+                {block:IfBlogFourText}<li><a href="{text:Blog Four Link}">{text:Blog Four Text}</a></li>{/block:IfBlogFourText}
+                {block:IfBlogFiveText}<li><a href="{text:Blog Five Link}">{text:Blog Five Text}</a></li>{/block:IfBlogFiveText}
+                {block:IfBlogSixText}<li><a href="{text:Blog Six Link}">{text:Blog Six Text}</a></li>{/block:IfBlogSixText}
+            </div>
+        </div>
+    </div>
+{/block:IfBlogOneText}
