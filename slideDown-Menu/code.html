@@ -1,0 +1,84 @@
+
+<!--
+    slideDown Menu by Dune Themes
+    
+    Need help?
+    dunethemes.tumblr.com/support
+    dunethemes@gmail.com
+    @DuneThemes
+    
+    Do not redistribute or claim as your own.
+    © Dune Themes
+-->
+
+<link rel="stylesheet" href="http://static.tumblr.com/uv8mqxy/4bXocb2yw/slidedown.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" />
+{block:Hidden}
+	<meta name="if:Show Dune Themes Link" content="1">
+    <meta name="color:Slide Down Links Background" content="#E7E7E7">
+    <meta name="color:Slide Down Links" content="#000">
+    <meta name="color:Slide Down Blog Title" content="#5C5C5C">
+    <meta mame="color:Slide Down Blog Title Hovered" content="#000">
+    <meta name="color:Slide Down Buttons" content="#5C5C5C">
+    <meta name="color:Slide Down Buttons Hovered" content="#000">
+{/block:Hidden}
+<style>
+	@import 'https://fonts.googleapis.com/css?family=Open+Sans:400,700';
+	header.dtadd-slide-down-menu,
+	.dtadd-slide-down-menu-links{
+		font-family: 'Open Sans', sans-serif;
+	}
+	header.dtadd-slide-down-menu{
+		font-family: 'Open Sans', sans-serif;
+		font-weight: 700;	
+	}
+	/* --- Colours --- */
+		.dtadd-slide-down-menu-links{
+			background: {color:Slide Down Links Background};
+		}
+		.dtadd-slide-down-menu-links a{
+			color: {color:Slide Down Links};	
+		}
+		header.dtadd-slide-down-menu a{
+			color: {color:Slide Down Blog Title};	
+		}
+		header.dtadd-slide-down-menu a:hover{
+			color: {color:Slide Down Blog Title Hovered};	
+		}
+		.dtadd-slide-down-menu-open,
+		.dtadd-slide-down-menu-close{
+			color: {color:Slide Down Buttons};	
+		}
+		.dtadd-slide-down-menu-open:hover,
+		.dtadd-slide-down-menu-close:hover{
+			color: {color:Slide Down Buttons Hovered};	
+		}
+</style>
+{block:HasPages}
+    <div class="dtadd-slide-down-menu-links">
+        <nav>
+            {block:Pages}<li><a href="{URL}">{Label}</a></li>{/block:Pages}
+            {block:IfShowDuneThemesLink}
+            	<li><a href="http://dunethemes.tumblr.com">Dune Themes</a></li>
+            {/block:IfShowDuneThemesLink}
+        </nav>
+    </div>
+    
+    <header class="dtadd-slide-down-menu">
+        <div class="dtadd-slide-down-menu-close">
+            <i class="fa fa-close"></i>
+        </div>
+        <div class="dtadd-slide-down-menu-open">
+            <i class="fa fa-bars"></i>
+        </div>
+        {block:ShowTitle}
+            <a href="" class="blog-link">
+                <h1>
+                    {Title}
+                </h1>
+            </a>
+        {/block:ShowTitle}
+    </header>
+{/block:HasPages}
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+<script src="http://static.tumblr.com/uv8mqxy/DxKocb2zg/slidedown.js"></script>
