@@ -1,0 +1,84 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+	<title>Password Protected!</title>
+    <style>
+		/* --- Styling --- */
+			.form-wrap{
+				width: 50%;
+				transform: translate(-50%, -50%);
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				text-align: center;
+				pointer-events: all;	
+			}
+			.form-content{
+				padding: 20px;	
+				width: 500px;
+				position: relative;
+				margin: 0 auto;
+			}
+				h1{
+					text-transform: uppercase;
+					font-size: 1.4em;
+					margin: 0;
+					margin-bottom: 20px;	
+				}
+				input{
+					padding: 10px;
+					margin-bottom: 5px;
+					width: 400px;
+				}
+					input.pass{
+						margin-bottom: 20px;	
+					}
+				button{
+					padding: 20px;
+					text-transform: uppercase;
+					text-align: center;
+					border: none;
+					outline: none;	
+				}
+
+		/* --- Colours --- */
+			body{
+				background: #e63535;	
+			}
+			.form-content{
+				background: #fff;	
+			}
+				button{
+					background: #e63535;
+					color: #fff;	
+				}
+	</style>
+</head>
+
+<body>
+	<div class="form-wrap">
+    	<div class="form-content">
+            <h1>Password Protected Page</h1>
+            <form name="login">
+                <input type="text" class="uid" name="userid" placeholder="Your ID" /><br>
+                <input type="password" class="pass" name="pswrd" placeholder="key" /><br>
+                <button type="submit" onClick="check(this.form)">
+                    Enter
+                </button>
+            </form>
+        </div>
+    </div>
+    <script language="javascript">
+		function check(form) {
+			// Change "myuserid" to your login and change "mypswrd" to your passwword 
+			if(form.userid.value == "myuserid" && form.pswrd.value == "mypswrd") {
+				window.open('target.html') // change "target.html" to the page you want to password protect
+			}
+			else {
+				alert("Error in Password or Username") // This is what is said if login/pass are incorrect
+			}
+		}
+	</script>
+</body>
+</html>
